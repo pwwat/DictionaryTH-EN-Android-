@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send To:ninwatza@gmail.com"
+        android:id="@+id/txtSend"
+        android:textSize="20dp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="หัวข้อ"
+        android:id="@+id/subject"
+        android:singleLine="true"
+        android:layout_below="@+id/txtSend"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/message"
+        android:layout_below="@+id/subject"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="เนื้อหา"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:id="@+id/sendemail"
+        android:layout_below="@+id/message"
+        android:background="#0d47a1"
+        android:textColor="#fff"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:id="@+id/cancle"
+        android:layout_alignTop="@+id/sendemail"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#b71c1c"
+        android:textColor="#fff"
+        />
+
+
+</RelativeLayout>
